@@ -145,7 +145,7 @@
 	TEQ	R2,#1
 	ORREQ	R1,R1,#&20			; If the 25MHz clock is there, set the 6th bit.
 	ADDNE	R3,R1,#3
-	ADDEQ	R3,R1,#2
+	ADDEQ	R3,R1,#1
 	TEQ	R0,#1				; If the 25MHz clock is present
 	BEQ     _SetWEClock_SWI                  ; Set the clock...
 
